@@ -1,0 +1,56 @@
+BEGIN
+INTEGER X;
+INTEGER Y;
+INTEGER J;
+INTEGER K;
+WRITE("Enter value of X");
+READ(X);
+WRITE("X is:");
+WRITELN(X);
+WRITE("Enter value of Y:");
+READ(Y);
+WRITE("Y is:");
+WRITELN(Y);
+J := X;
+K := Y;
+WHILE (X!=Y)
+DO
+BEGIN
+IF X > Y
+THEN
+BEGIN
+X := X-Y;
+END;
+Y := Y-X;
+END;
+WRITE("The gcd =");
+WRITELN(X);
+BEGIN
+INTEGER Z;
+INTEGER I;
+Z := J;
+I := K;
+WHILE(J != K)
+DO
+BEGIN
+IF(J < K)
+THEN
+BEGIN
+Z := J + Z;
+END;
+I := K + I;
+END;
+WRITELN("The LCM is:");
+WRITELN(Z);
+END;
+BEGIN
+WRITELN("Some general math");
+INTEGER PROD;
+INTEGER DIVIDE;
+PROD := X * Y + (Z);
+WRITELN(PROD);
+DIVIDE := X * 2 / Y;
+WRITELN(DIVIDE);
+END;
+END.
+

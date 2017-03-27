@@ -1,0 +1,7 @@
+.data
+True: .asciiz " True" 
+False: .asciiz " False" 
+nl: .asciiz "\n"
+True: .asciiz " True" 
+False: .asciiz " False" 
+nl: .asciiz "\n"

@@ -1,0 +1,63 @@
+BEGIN
+INTEGER X;
+INTEGER Y;
+INTEGER X1;		COMMENT Value to calculate LCM;
+INTEGER Y1;		COMMENT Value to calculate LCM;
+WRITE("Enter value of X");
+READ(X);
+WRITE("X is:");
+WRITELN(X);
+WRITE("Enter value of Y:");
+READ(Y);
+WRITE("Y is:");
+WRITELN(Y);
+X1 := X;
+Y1 := Y;
+WHILE (X!=Y)
+BEGIN
+IF X > Y
+THEN
+BEGIN
+X := X-Y;
+END;
+Y := Y-X;
+END;
+WRITE("The gcd =")
+WRITELN(X);
+BEGIN			COMMENT compute LCM;
+INTEGER Z; 
+INEGER I;
+Z := X1;
+I := Y1;
+WHILE(X1 != Y1)
+DO
+BEGIN
+IF(X1 < Y1)
+THEN
+BEGIN
+Z := X1 + Z;
+END;
+I := Y1 + I;
+END;
+WRITE("The LCM is:");
+WRITELN(Z);
+END;
+BEGIN			
+WRITE("Some general math");
+INTEGER PROD;
+INTEGER DIV;
+LOGICAL A;
+LOGICAL B;
+LOGICAL RESULT;
+LOGICAL FLAG ="TRUE";
+STRING TEXT ="hello world!";
+PROD = X * Y;
+DIV = X / Y;
+RESULT := A AND B;
+RESULT := A OR B;
+IF(X!Y)
+THEN 
+FLAG := "FALSE";
+END;
+END.
+
